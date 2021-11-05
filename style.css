@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
-body html {
+body {
     font-family: 'Roboto', sans-serif;
     margin: 0px;
    
@@ -8,12 +8,14 @@ body html {
 h1{
     font-family: 'Shrikhand', cursive;
     box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
-    padding:0.3em;
+    padding:0.5em;
     text-align: center;
+    position: relative;
+    margin: 0px;
 }
 
 header{
-    margin: -8px -10px 0px -8px;
+    
 }
 
 .head{
@@ -23,11 +25,7 @@ header{
     background-color:#80808014;
     padding-bottom:60px ;
 }
-.head p {
-    font-size: 21px;
-    text-align: center;
-   
-}
+
 .head h2{
     font-size: 1.5em;
     text-align: center;
@@ -46,14 +44,13 @@ header{
     color: white;
 }
 
-.paris{
-    background-color:#80808030;
+.city{
+    background-color:#80808017;
     width: 100%;
     font-weight: 700;
+    text-align: center;
+    font-size: 20px;
     
-}
-.paris i {
-    margin-right: 15px;
 }
 
 
