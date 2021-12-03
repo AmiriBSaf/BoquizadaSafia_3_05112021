@@ -47,6 +47,12 @@ h1{
     font-size: 1.1em;
     font-weight: 500;
     color: white;
+    
+}
+.explorebtn:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    opacity: 0.9;
 }
 
 
@@ -77,7 +83,7 @@ h2{
 }
 .li-list:hover{
     transform: scale(1.02);
-    background-color: #acacac;
+    
 
 }
 .li-list{
@@ -120,6 +126,9 @@ h2{
 .i-icon{
     margin-right: 1rem;
     color: #7e7e7e;
+}
+.i-icon:hover{
+    color: #9356dc;;
 }
 
 /*Resturants*/
@@ -180,7 +189,33 @@ h2{
 .card-title{
     margin: 0;
 }
-/*.card-btn{
+
+
+.card-btn{
+    font-size: 30px;
+    
+}
+.card-btn .fas{
+    position: absolute;
+    color: transparent;
+    background-image: linear-gradient(0deg,#9356dc,#ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    top:21px;
+    right:15px;
+    opacity: 0;
+    transition: 1s;
+    font-size: 32px;
+}
+.card-btn .fas:hover{
+    opacity: 1;
+}
+.card-btn .far:hover{
+    opacity: 0;
+}
+/*
+
+.card-btn{
     height: 2rem;
     width: 2rem;
     background-color: initial;
@@ -191,11 +226,11 @@ h2{
     justify-content: center;
     cursor: pointer;
     position: relative;
-    background-color: #000;
-}*/
+    background-color:black;
+}
 
-/*
-.card-btn:before, .card-like {
+
+card-btn:before, .card-like {
     position: absolute;
     top: 0;
     left: 0;
@@ -203,17 +238,17 @@ h2{
     width: 100%;
 }
 
-.card-btn:before {
+
+.card-btn{
     opacity: 0;
     transition: .5s;
     content: "";
-    background: linear-gradient(
-0deg,#9356dc,#ff79da);
+    background: linear-gradient(0deg,#9356dc,#ff79da);
 }
 
 .card-like {
     transition-duration: .25s;
-    background-color: #f6f6f6;
+    background-color: #691919;
     display: flex;
     align-items: center;
     justify-content: center;
