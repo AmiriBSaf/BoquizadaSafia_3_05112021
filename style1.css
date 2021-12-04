@@ -1,5 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
+body{
+    font-family: Roboto,sans-serif;
+}
+header{
+    padding: 1rem;
+    box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+    z-index: 1000;
+}
+.back-header{
+    position: relative;
+}
+.back-arrow{
+    position: absolute;
+    left: 2rem;
+    height: 2rem;
+    width: 2rem;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #000;
+}
+.logo{
+    font-family: Shrikhand,"cursive";
+    margin: 0;
+    text-align: center;
+}
+.main-photo{
+    max-width: 100%;
+    max-height: 32rem;
+    width: 100%;
+    object-fit: cover;
+}
+/*main*/
+.main-menu{
+    margin-top: -4rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: #f6f6f6;
+    z-index: 1;
+    position: relative;
+}
+.menu-title{
+    font-family: Shrikhand,"cursive";
+}
+
+.menu-btn .fas{
+    position: absolute;
+    color: transparent;
+    background-image: linear-gradient(0deg,#9356dc,#ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    top:21px;
+    right:30px;
+    opacity: 0;
+    transition: 1s;
+    font-size: 33px;
+}
+.menu-btn .fas:hover{
+    opacity: 1;
+}
+.far{
+    position: absolute;
+    right: 31px;
+    top: 23px;
+    font-size: 30px;
+}
+
+
 /*footer*/
 .end-footer{
     background-color: #353535;
