@@ -116,11 +116,13 @@ header{
     padding:14px;
 }
 .menu-check{
-   background-color:  #99e2d0;
-   border-radius: 0 12px 12px 0;
-   margin-right: -6rem;
-   width: 5rem;
-   transition: all 1s;
+    display:grid;
+    place-items: center;
+    background-color:  #99e2d0;
+    border-radius: 0 12px 12px 0;
+    margin-right: -6rem;
+    width: 5rem;
+   
  
 }
 
