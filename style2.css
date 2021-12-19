@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+body{
+    font-family: Roboto,sans-serif;
+    margin:0px
+}
+header{
+    padding: 1rem;
+    box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+    z-index: 1000;
+}
+.back-header{
+    position: relative;
+}
+.back-arrow{
+    position: absolute;
+    left: 2rem;
+    height: 2rem;
+    width: 2rem;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #000;
+}
+.logo{
+    font-family: Shrikhand,"cursive";
+    margin: 0;
+    text-align: center;
+}
+.main-photo{
+    max-width: 100%;
+    max-height: 32rem;
+    width: 100%;
+    object-fit: cover;
+}
+/*main*/
+.main-menu{
+    margin-top: -4rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: #f6f6f6;
+    z-index: 1;
+    position: relative;
+}
+.menu-title{
+    font-family: Shrikhand,"cursive";
+}
+
+/*.menus{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:1rem;
+    @media (max-width: variable.$breakpoint) {
+        grid-template columns:1fr;
+    }
+}*/
+.menus-category{
+    border-radius: 1rem;
+    border: 1px red solid;
+
+}
+.menu-item{
+    display:flex;
+   
+}
+.menu-itemdes{
+    padding:1rem;
+}
+.prix{
+    display:flex;
+    align-items: flex-end;
+    margin-left: auto;
+    font-weight: 900;
+    padding: 1rem;
+}
+.menu-check{
+    background-color: #99e2d0;;
+}
