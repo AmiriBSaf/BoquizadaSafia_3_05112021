@@ -77,15 +77,9 @@ h2{
     margin: 0;
     padding: 0;
     list-style: none;
-    counter-reset: compteListe;
-   
-    
+    counter-reset: compteListe;  
 }
-.li-list:hover{
-    transform: scale(1.02);
-    background-image: linear-gradient(#d8b7cf, #bc9ee0 );
 
-}
 .li-list{
         padding: 1.5rem;
         margin: 1rem 0 1rem .75rem;
@@ -122,13 +116,19 @@ h2{
     display: flex;
     position: relative;
 }
+.li-list:hover{
+    transform: scale(1.02);
+    background-image: linear-gradient(#d8b7cf, #bc9ee0 );
+
+}
+.li-list:hover
+.i-icon{
+    color:#9356dc;
+}
 
 .i-icon{
     margin-right: 1rem;
     color: #7e7e7e;
-}
-ol:hover{
-    color: #9356dc;
 }
 
 

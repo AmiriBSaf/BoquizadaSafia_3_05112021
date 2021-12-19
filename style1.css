@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
+
 body{
     font-family: Roboto,sans-serif;
     margin:0px
@@ -109,11 +110,11 @@ header{
 .menu-item{
     display: flex;
     overflow: hidden;
-    animation: appear 1s;;
+    cursor: pointer;
     
 }
 .menu-description{
-    padding:14px;
+    padding:16px;
 }
 .menu-check{
     display:grid;
@@ -122,15 +123,34 @@ header{
     border-radius: 0 12px 12px 0;
     margin-right: -6rem;
     width: 5rem;
+    transition-duration: 5s;
+    animation: rotated 1s;
    
- 
 }
 
- .menu-item:hover{
+.menuItem__icon{
+    display: grid;
+    place-items: center;
+    background: #fff;
+    aspect-ratio: 1;
+    width: 26px;
+    border-radius: 50%;
+    color:#99e2d0;
+    animation: rotated 1s;
+    
+}
+.menu-item:hover
+.i-animation{
+    animation: rotated 1s;
+}
+
+ .menu-item:hover {
     margin-right: 6rem;
-    overflow: visible;
-
+    overflow: visible; 
+  
 }
+
+
 .menu-price{
     margin-left: auto;
     font-weight: 700;
@@ -144,78 +164,7 @@ header{
     text-overflow: ellipsis;
     overflow: hidden;
 }
-/*animation*/
-@keyframes appear{
-    0%{
-        transform: scale(0);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
-/*.delay-0{
-    -o-animation-delay: 0s;
-}
 
-.menu-item {
-    background-color: #fff;
-    padding: 1rem;
-    display: flex;
-    border-radius: 0.75rem;
-    margin: 1rem 0;
-    box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
-    overflow: hidden;
-    cursor: pointer;
-    animation: itemAppear .6s;
-    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
-    animation-fill-mode: both;
-    transform: scale(0);
-    max-width: 100%;
-}*/
-
-/*.validation{
-    background-color: #99e2d0;
-    margin: -1rem -5rem -1rem 1rem;
-    width: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition-duration: .5s;
-}
-.wrapicon{
-    height: 1.6rem;
-    width: 1.6rem;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100px;
-    transform: rotate(180deg);
-    transition-duration: .5s;
-}
-.wait-1{
-    animation-delay: .1s ;
-}
-
-
-.wait-1 {
-    animation-delay: .1s;
-}
-.menuitem {
-    background-color: #fff;
-    padding: 1rem;
-    display: flex;
-    border-radius: 0.75rem;
-    margin: 1rem 0;
-    box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
-    overflow: hidden;
-    cursor: pointer;
-    animation: itemAppear .6s;
-    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
-    animation-fill-mode: both;
-    transform: scale(0);
-    max-width: 100%;
-}*/
 /*commander*/
 .commande{
     display: flex;
@@ -274,4 +223,28 @@ header{
 .footer-icon {
     width: 1.2rem;
     margin-right: .5rem;
+}
+/*animation*/
+@keyframes appear{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+@keyframes rotated{
+    0%{
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
 }
