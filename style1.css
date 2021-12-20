@@ -129,9 +129,8 @@ header{
     border-radius: 0 12px 12px 0;
     margin-right: -6rem;
     width: 5rem;
-    transition-duration: 5s;
-   
-   
+    transition: margin-right 2s;
+     
 }
 
 .menuItem__icon{
@@ -153,6 +152,8 @@ header{
  .menu-item:hover {
     margin-right: 6rem;
     overflow: visible; 
+    
+    
   
 }
 
@@ -240,11 +241,10 @@ header{
     }
 }
 @-webkit-keyframes slide {
-    100% { left: 0; }
+    from { right: 0px; 
 }
-
-@keyframes slide {
-    100% { left: 0; }
+    to { right: 100px; 
+}
 }
 @keyframes rotated{
     0%{
