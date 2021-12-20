@@ -98,7 +98,9 @@ header{
 .menuitem-title{
     margin-top: -3px;
     margin-bottom: 5px;
-   
+    white-space: nowrap;
+    overflow: hidden;
+   text-overflow: ellipsis;
 }
 /*menu-part*/
 .menu-category{
@@ -116,6 +118,9 @@ header{
 }
 .menu-description{
     padding:16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .menu-check{
     display:grid;
@@ -125,7 +130,7 @@ header{
     margin-right: -6rem;
     width: 5rem;
     transition-duration: 5s;
-    animation: rotated 1s;
+   
    
 }
 
@@ -137,7 +142,7 @@ header{
     width: 26px;
     border-radius: 50%;
     color:#99e2d0;
-    animation: rotated 1s;
+ 
     
 }
 .menu-item:hover
@@ -248,4 +253,17 @@ header{
     100%{
         transform: rotate(0);
     }
+}
+
+/*media*/
+@media only screen and (min-width:992px ){
+.submenu {
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 5px;  
+}
+
+.commande {
+    display:grid;
+    grid-column-start:2 ;
+}
 }
