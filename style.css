@@ -5,6 +5,7 @@ body {
     margin: 0px;
    
 }
+
 h1{
     font-family: 'Shrikhand', cursive;
     box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
@@ -13,6 +14,7 @@ h1{
     position: relative;
     margin: 0px;
 }
+
 .city{
     background-color:#80808017;
     width: 100%;
@@ -20,8 +22,6 @@ h1{
     text-align: center;
     font-size: 20px;
     padding: 2px;
-   
-    
 }
 .explore{
     text-align: center;
@@ -33,10 +33,12 @@ h1{
     font-size: 1.5rem;
     margin:0px
 }
+
 .explore p{
     font-weight: 300;
     
 }
+
 .explorebtn{
     background-image: linear-gradient(#FF79DA, #9356DC );
     box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
@@ -211,48 +213,6 @@ h2{
 .card-btn .far:hover{
     opacity: 0;
 }
-/*
-
-.card-btn{
-    height: 2rem;
-    width: 2rem;
-    background-color: initial;
-    border: 0 solid transparent;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    position: relative;
-    background-color:black;
-}
-
-
-card-btn:before, .card-like {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
-
-
-.card-btn{
-    opacity: 0;
-    transition: .5s;
-    content: "";
-    background: linear-gradient(0deg,#9356dc,#ff79da);
-}
-
-.card-like {
-    transition-duration: .25s;
-    background-color: #691919;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    mix-blend-mode: lighten;
-}
-
 
 /*footer*/
 .end-footer{
