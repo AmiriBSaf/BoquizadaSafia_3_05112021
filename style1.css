@@ -55,7 +55,7 @@ header{
     background-image: linear-gradient(0deg,#9356dc,#ff79da);
     background-clip: text;
     -webkit-background-clip: text;
-    top:21px;
+    top:38px;
     right:30px;
     opacity: 0;
     transition: 1s;
