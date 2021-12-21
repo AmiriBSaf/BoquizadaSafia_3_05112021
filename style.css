@@ -286,6 +286,7 @@ card-btn:before, .card-like {
     width: 1.2rem;
     margin-right: .5rem;
 }
+
 /*media*/
 @media only screen and (min-width:992px ){
     .ol-list {
@@ -297,6 +298,9 @@ card-btn:before, .card-like {
     .li-list{
         flex: 1;
         margin-left: 30px;
+    }
+    .cards{
+        grid-template-columns: repeat(2,1fr);
     }
 
 }
