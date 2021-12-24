@@ -3,7 +3,7 @@
 
 body{
     font-family: Roboto,sans-serif;
-    margin:0px
+    margin:0;
 }
 header{
     padding: 1rem;
@@ -96,40 +96,54 @@ header{
     bottom: 0;
 }
 .menuitem-title{
-    margin-top: -3px;
-    margin-bottom: 5px;
+    margin:0;
     white-space: nowrap;
     overflow: hidden;
    text-overflow: ellipsis;
 }
 /*menu-part*/
-.menu-category{
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
-    animation: appear 1s;
-}
+
 .menu-item{
     display: flex;
     overflow: hidden;
     cursor: pointer;
-    margin: 14px 5px 5px 0;
+    margin: 1rem 0;
+    padding: 1rem;
+    max-width: 100%;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+    animation: appear 1s;
     
 }
-.menu-description{
-    padding:16px;
+.menu-description {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    flex: 1;
+}
+.menu-price{
+    font-weight: 700;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-left: 0.5rem;
+    
+}.food-discription{
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .menu-check{
-    display:grid;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: -1rem -5rem -1rem 1rem;
     place-items: center;
     background-color:  #99e2d0;
-    border-radius: 0 12px 12px 0;
-    margin-right: -6rem;
-    width: 5rem;
-    transition: margin-right 2s;
+    width: 4rem;
+    transition: .5s;
      
 }
 
@@ -141,36 +155,20 @@ header{
     width: 26px;
     border-radius: 50%;
     color:#99e2d0;
- 
-    
-}
+ }
+
 .menu-item:hover
 .i-animation{
     animation: rotated 1s;
 }
 
- .menu-item:hover {
-    margin-right: 6rem;
-    overflow: visible; 
-    
-    
-  
+ .menu-item:hover
+ .menu-check {
+    margin-right: -1rem;  
 }
 
 
-.menu-price{
-    margin-left: auto;
-    font-weight: 700;
-    display: flex;
-    align-items: flex-end;
-    padding: 14px 30px 14px 5px;
-    
-}.food-discription{
-    margin: 0;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
+
 
 /*commander*/
 .commande{
@@ -231,6 +229,7 @@ header{
     width: 1.2rem;
     margin-right: .5rem;
 }
+
 /*animation*/
 @keyframes appear{
     0%{
@@ -245,6 +244,7 @@ header{
 }
     to { right: 100px; 
 }
+
 }
 @keyframes rotated{
     0%{
