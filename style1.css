@@ -53,7 +53,7 @@ header{
     position: absolute;
     color: transparent;
     background-image: linear-gradient(0deg,#9356dc,#ff79da);
-    background-clip: text;
+    background-clip: border-box;
     -webkit-background-clip: text;
     top:38px;
     right:30px;
