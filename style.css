@@ -49,7 +49,7 @@ body {
     top: 0;
     left: 0;
     border-radius: 100% 0 0 0;
-    -webkit-animation: spinny 2s linear infinite;
+    animation: spinny 2s linear infinite;
     transform-origin: 100% 100%;
 }
 /*animation*/
@@ -59,7 +59,7 @@ body {
         z-index: -10;
     }
 }
-@-webkit-keyframes spinny {
+@keyframes spinny {
     0% {
         transform: rotate(0deg);
         background-image: linear-gradient(#FF79DA, #9356DC ,#83ffe0 );
